@@ -32,12 +32,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 #### Architecture 1
 Balance between small bundle size and great user experience.
-+ Eager Loaded:
+EAGER LOADED:
 - App Routing Module
 - APP Module
 - Core Module
 
-+ Lazy loaded (routing):
+LAZY LOADED (ROUTING):
 - Lazy feature 1
 - Lazy feature 2
 - Lazy feature n
