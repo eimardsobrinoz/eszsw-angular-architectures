@@ -27,12 +27,21 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
-## Services and Shared Module
 
-The best way to set services is in core folder using providedIn: 'root' syntax without adding them within providers[] in Modules.
-Why? Because a large amount of lazy features could import this shared Module, having its own instance of service, something that we surely are not looking for.
-That is why in the Shared Module we should never add services. It should only contain declarables (components, pipes, directives, etc) and modules (which only contains declarables too).
+## ARCHITECTURES
 
-## Lazy Loading
-This first architecture makes use of two lazy features.
-If one of them gets too big, take into account add new nested lazy features if needed.
+#### Architecture 1
+Balance between small bundle size and great user experience.
++ Eager Loaded:
+- App Routing Module
+- APP Module
+- Core Module
+
++ Lazy loaded (routing):
+- Lazy feature 1
+- Lazy feature 2
+- Lazy feature n
+- Shared Module
+
+
+#### Architecture 2
