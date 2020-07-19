@@ -31,8 +31,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## ARCHITECTURES
 
 #### Architecture 1
-Balance between small bundle size and great user experience.
-EAGER LOADED:
+Balance between small bundle size and great user experience.  
+  
+EAGER LOADED:  
 - App Routing Module
 - APP Module
 - Core Module
@@ -45,3 +46,7 @@ LAZY LOADED (ROUTING):
 
 
 #### Architecture 2
+Not finished
+HTTp service
+Error Service
+etc ...
